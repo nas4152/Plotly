@@ -1,0 +1,26 @@
+---
+title: 
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+## Look at this fascinating plot
+
+
+
+```{r plot}
+library(plotly)
+plot_ly(iris, x = ~Sepal.Width, y = ~Sepal.Length, color = ~Species)
+```
+
+## Oh and here's the date
+
+
+```{r date, echo= TRUE}
+Sys.Date() %>% format("%d %b %Y")
+
+```
+
